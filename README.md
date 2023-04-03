@@ -137,7 +137,7 @@ do
 done
 ```
 
-![My Image](images/section3.png)
+![My Image](images/section3.PNG)
 
 ## Section 4:
 
