@@ -24,6 +24,10 @@ echo ${dns2} >> ${target}
 echo "shecan dns was set."
 ```
 
+We can see the changes in the file:
+
+![My Image](images/section1.png)
+
 ## Section 2
 
 ### 1:
@@ -34,7 +38,11 @@ It can be done by one line command that changes the permission of files recursiv
 chmod -R 777 /lib
 ```
 
-we can implement this function as a recursive function represented below:
+The result:
+
+![My Image](images/image_sec2_1.png)
+
+we can implement this function as a recursive function represented below:(This function had implemented on the internet)
 
 ```
 #! /usr/bin/bash
@@ -57,7 +65,7 @@ done
 traverse "$1"
 ```
 
-another way to implement this function is represented in the below script.
+Implementing this function in a different way is represented in the below script.
 
 ```
 #!/bin/bash
@@ -86,8 +94,6 @@ traverse "$1"
 
 ```
 
-
-
 ### 2:
 
 The below script represents this function:
@@ -100,7 +106,9 @@ while results=$(find "$@" -mindepth $i -maxdepth $i) && [[ -n $results ]]; do
 done
 ```
 
+We test this script and function on a specific directory; the result is below.
 
+![My Image](images/image_sec2_2.png)
 
 # Section 3:
 
